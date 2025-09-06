@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>WDD 131 – Dynamic Web Fundamentals – Carlos Quijano</title>
+
+ 
+  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals — Carlos Quijano. Personal course homepage with links to LinkedIn, Canvas, scripture study, and a final project placeholder; includes profile info, goals, and local optimized images." />
+
+  <meta name="author" content="Carlos Quijano" />
+  
+  <link rel="stylesheet" href="styles/base.css">
+</head>
+<body>
+  <header>
+    <div class="wrap top">
+      <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+      <nav aria-label="Primary">
+        <a href="https://www.linkedin.com/in/carlos-quijano" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://byupw.instructure.com/" target="_blank" rel="noopener noreferrer">Canvas</a>
+        <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank" rel="noopener noreferrer">Scripture</a>
+        <a href="final-project/" title="Final Project">Final Project</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <h1>Carlos Quijano</h1>
+
+    <section class="grid" aria-label="Feature cards">
+     
+      <section class="card" aria-labelledby="card-about-heading">
+        <header>
+          <h2 id="card-about-heading">About Me</h2>
+        </header>
+        <div class="content">
+          <img src="images/profile.jpg" alt="Portrait of Carlos Quijano" width="400" height="400" loading="lazy" />
+          <div>
+            <p>Hello! I'm <strong>Carlos Quijano</strong>. This site collects my work for <em>WDD 131 – Dynamic Web Fundamentals</em>. I enjoy building accessible, responsive interfaces and sharpening my JavaScript skills.</p>
+            <p class="muted">I'm passionate about creating dynamic and interactive web experiences using modern web technologies and best practices.</p>
+          </div>
+        </div>
+      </section>
+
+     
+      <section class="card" aria-labelledby="card-projects-heading">
+        <header>
+          <h2 id="card-projects-heading">Projects & Goals</h2>
+        </header>
+        <div class="content">
+          <img src="images/projects.jpg" alt="Web development projects showcase" width="400" height="300" loading="lazy" />
+          <div>
+            <p>Throughout this course, I'll be working on various projects that demonstrate my understanding of dynamic web fundamentals. Here are my current focuses and goals:</p>
+            <ul>
+              <li>Focus: semantic HTML, modern CSS, and vanilla JS</li>
+              <li>Goal: write clean, accessible, performant code</li>
+              <li>Projects: small, iterative, and mobile-first</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>© <span id="currentyear"></span> • Carlos Quijano • Utah</p>
+      <p id="lastModified" class="muted"></p>
+    </div>
+  </footer>
+
+  <script src="scripts/getdates.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+:root { 
+    --maxw: 1100px; 
+    --gap: 1rem; 
+    --card-bg: #fff; 
+    --ink: #1f2937; 
+    --muted: #6b7280; 
+    --border: #e5e7eb; 
+    --brand: #0f766e; 
+}
+
+* { 
+    box-sizing: border-box; 
+}
+
+html, body { 
+    height: 100%; 
+}
+
+body { 
+    margin: 0; 
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji"; 
+    color: var(--ink); 
+    background: #f8fafc; 
+}
+
+header { 
+    background: #fff; 
+    border-bottom: 1px solid var(--border); 
+}
+
+.wrap { 
+    max-width: var(--maxw); 
+    margin: 0 auto; 
+    padding: 1rem; 
+}
+
+header .top { 
+    display: flex; 
+    flex-wrap: wrap; 
+    align-items: center; 
+    gap: var(--gap); 
+    justify-content: space-between; 
+}
+
+#course-title { 
+    font-weight: 700; 
+    letter-spacing: .2px; 
+    color: var(--brand); 
+}
+
+nav a { 
+    text-decoration: none; 
+    color: var(--ink); 
+    padding: .5rem .75rem; 
+    border-radius: .75rem; 
+    border: 1px solid transparent; 
+}
+
+nav a:hover, nav a:focus { 
+    outline: none; 
+    border-color: var(--border); 
+    background: #f1f5f9; 
+}
+
+main { 
+    padding: 2rem 0; 
+}
+
+h1 { 
+    margin: 0 0 1rem; 
+    font-size: clamp(1.4rem, 2.5vw + 1rem, 2rem); 
+}
+
+.grid { 
+    display: grid; 
+    grid-template-columns: 1fr; 
+    gap: var(--gap); 
+}
+
+@media (min-width: 760px) { 
+    .grid { 
+        grid-template-columns: 1fr 1fr; 
+    } 
+}
+
+.card { 
+    background: var(--card-bg); 
+    border: 1px solid var(--border); 
+    border-radius: 1rem; 
+    overflow: hidden; 
+}
+
+.card header { 
+    padding: 1rem 1rem .5rem; 
+    border-bottom: 1px solid var(--border); 
+    background: #fff; 
+}
+
+.card h2 { 
+    margin: 0; 
+    font-size: 1.1rem; 
+}
+
+.card .content { 
+    display: grid; 
+    grid-template-columns: 110px 1fr; 
+    gap: 1rem; 
+    padding: 1rem; 
+}
+
+.card img { 
+    width: 100%; 
+    height: auto; 
+    display: block; 
+    border-radius: .75rem; 
+    border: 1px solid var(--border); 
+    background: #fff; 
+}
+
+.muted { 
+    color: var(--muted); 
+}
+
+footer { 
+    border-top: 1px solid var(--border); 
+    background: #fff; 
+}
+
+footer p { 
+    margin: .5rem 0; 
+    color: var(--muted); 
+}
